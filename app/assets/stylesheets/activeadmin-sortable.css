@@ -1,1 +1,9 @@
+/* change size pagination for drag-n-drop */
+.pagination a,
+.pagination span.page.current { padding: 6px 9px; }
+
+.drop_active a{ background: #56FF5C; }
+.drop_hover a{ background: #56AEFF }
+
 .activeadmin-sortable .handle { cursor: ns-resize; }
+
