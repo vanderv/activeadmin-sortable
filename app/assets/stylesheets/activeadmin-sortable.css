@@ -1,9 +1,10 @@
 /* change size pagination for drag-n-drop */
 .pagination a,
 .pagination span.page.current { padding: 6px 9px; }
-
-.drop_active a{ background: #56FF5C; }
-.drop_hover a{ background: #56AEFF }
-
-.activeadmin-sortable .handle { cursor: ns-resize; }
+.drop_active a { background: #56FF5C; }
+.drop_hover a { background: #56AEFF }
+.activeadmin-sortable { text-align: center; cursor: move; }
+.activeadmin-sortable .handle { cursor: move; }
+.activeadmin-sortable .handle .icon { width: 1em; height: 1em; }
+.activeadmin-sortable .handle .icon svg { vertical-align:top; }
 

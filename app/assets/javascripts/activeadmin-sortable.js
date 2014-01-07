@@ -10,6 +10,7 @@
   $.fn.activeAdminSortable = function() {
 
     this.sortable({
+      handle: '.activeadmin-sortable',
       start: function(event, ui) {
         not_sortable = ui.item.parent().find("tr").not(ui.helper, ui.placeholder);
         $('td', not_sortable).each(function(n){
@@ -37,6 +38,7 @@
     });
 
     $(".pagination .page:not(.current)").droppable({
+      handle: '.activeadmin-sortable',
       activeClass: "drop_active",
       hoverClass: "drop_hover",
       tolerance: "pointer",

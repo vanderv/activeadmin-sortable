@@ -19,7 +19,7 @@ module ActiveAdmin
     end
 
     module TableMethods
-      HANDLE = '&#x2195;'.html_safe
+      HANDLE = Iconic.icon :move_alt1
 
       def sortable_handle_column
         column '', :class => "activeadmin-sortable" do |resource|
